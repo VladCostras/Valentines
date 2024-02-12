@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+h2 {
+    text-align: center;
+    color: red;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+body {
+    background-color: pink;
+}
