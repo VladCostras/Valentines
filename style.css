@@ -1,15 +1,28 @@
 h1 {
     text-align: center;
-    color: red;
+    color: thistle;
 }
-h2 {
-    text-align: center;
-    color: red;
-}
+
 div {
     display: flex;
     justify-content: center;
 }
 body {
-    background-color: pink;
+    background-color:firebrick ;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+#Yesbtn {
+    font-size: 24px;
+    background-color: thistle;
+}
+#Nobtn {   
+    font-size: 24px;
+    background-color: thistle;
+}
+
