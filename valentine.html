@@ -12,7 +12,7 @@
 <body>
     <h1>Bubițe, Do you still want to be my Valentine ? <span style='font-size:50px;'>&#128527;</span></h1>
 
-    <div>
+    <div id="maindiv">
         <img src="./images/bemy-valentine.gif" alt="Dog asking valentine">
     </div>
 
@@ -21,9 +21,21 @@
         <span style='font-size:50px;'>&#128536;</span>
     </h1>
 
-    <div class="container">
-        <button id="Yesbtn">Yes</button>
-        <button id="Nobtn">No</button>
+    <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" style="left: 1247.48px; top: 190.515px;">No</button>
+        <script>
+            function nextPage() {
+                window.location.href = "yes.html";
+            }
+            
+            function moveButton() {
+                var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                document.getElementById('noButton').style.left = `${x}px`;
+                document.getElementById('noButton').style.top = `${y}px`;
+            }
+        </script> 
     </div>
 </body>
 

@@ -3,26 +3,48 @@ h1 {
     color: thistle;
 }
 
-div {
+#maindiv {
     display: flex;
     justify-content: center;
 }
 body {
     background-color:firebrick ;
 }
-
-.container {
+/* Position the "No" button absolutely within body */
+#noButton {
+    position: absolute;
+    margin-left: 150px;
+    transition: 0.5s;
+    /* Smooth movement */
+}
+.buttons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#yesButton {
+    position: absolute;
+    margin-right: 150px;
+}
+.btn {
+    background-color: #FFB6C1;
+    color: #d35b41;
+    padding: 15px 32px;
     text-align: center;
-  }
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+/* .btn:hover {
+    background-color: transparent;
+} */
 
-#Yesbtn {
-    font-size: 24px;
-    background-color: thistle;
-}
-#Nobtn {   
-    font-size: 24px;
-    background-color: thistle;
-}
+
 
