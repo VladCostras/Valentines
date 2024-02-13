@@ -9,7 +9,6 @@ h1 {
 }
 
 body {
-        height: 100vh;
         background-color: firebrick;
 }
 /* Position the "No" button absolutely within body */
@@ -47,6 +46,12 @@ body {
 /* .btn:hover {
     background-color: transparent;
 } */
-
+#mesajfinal {
+    position: absolute;  
+    float:right;
+    right: 0;
+    down: 0;  
+    color: thistle; 
+}
 
 
